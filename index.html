@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>DINOLAND</title>
+      <link rel="stylesheet" href="index.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kablammo&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <!-- This gives the brownish background -->
+      <div id="backgroundContainer">
+         <header>
+            <!-- using nav for the booking area. This has a fixed position at the top for easier navigation and if the user wants to submit a booking -->
+            <nav>
+               <div id="contentMarker">
+                  <a href="#top"  class="navLinks">DINOLAND</a>
+                  <a href="#mainAttractions" class="navLinks">Main Attractions</a>
+                  <a href="#specialDates" class="navLinks">Special Dates</a>
+                  <a href="#contactUs" class="navLinks">Contact us</a>
+               </div>
+               <div id="bookings">
+                  <form action="successPages/bookingSuccess.html">
+                     Dates:
+                     <input type="date" required>
+                     Number of People
+                     <input type="number" min = "0" required>
+                     <input type="submit" value="Book Now!">
+                  </form>
+               </div>
+            </nav>
+         </header>
+         <p></p>
+         <main>
+            <img src="images/dinoland.jpg" alt="Dinoland Main Photo" style="transform: none; height: 25em; width: 25em;" >
+            <!-- Articles should be independent content -->
+            <article>
+               <p>
+               <div id="mainDescription">
+                  DINOLAND is a thrilling and exciting theme park that takes you back to the time of dinosaurs. Get ready for an adventure of a lifetime as you explore our prehistoric attractions and experience the wonder of these ancient creatures.
+                  </p>
+                  <p>
+                     Come and embark on a prehistoric adventure like no other at DINOLAND. Get ready to be amazed, thrilled, and transported back in time. We can't wait to welcome you to our park!
+                  </p>
+               </div>
+            </article>
+            <!-- main attractions -->
+            <section id="mainAttractions">
+               <h3><strong>Main Attractions!</strong> </h3>
+               <p></p>
+               <div class="pictures">
+                  <a href="links/mainAttraction1.html"><img src="images/rollerCoaster.jpeg" alt="rollerCoaster"></a>
+                  <a href="links/mainAttraction2.html"><img src="images/spinner.jpeg" alt="spinner"></a>
+               </div>
+            </section>
+            <h4><strong>Special dates!</strong> </h4>
+            <section id="specialDates">
+               <div id="specialDate1">
+                  <a ><img src="images/ferrisWheel.jpeg" alt="ferrisWheel"></a>
+                  <details>
+                     <summary style="list-style: none; padding: 0;">>January 1st</summary>
+                     <!-- Using the time tag for SEO purposes -->
+                     <div class="details">
+                        Join us on the <time datetime="2023-01-01">1st of January</time> for our thrilling Fireworks Spectacular!
+                     </div>
+                  </details>
+               </div>
+               <div id="specialDate2">
+                  <img src="images/summerCarnival.jpeg" alt="summer carnival">
+                  <details>
+                     <summary style="list-style: none; padding: 0;">>15th July</summary>
+                     <!-- Using the time tag for SEO purposes -->
+                     <div class="details">
+                        Don't miss out on our annual Summer Carnival from <time datetime="2023-07-15">July 15th</time> to <time datetime="2023-07-30">July 30th</time>!
+                     </div>
+                  </details>
+               </div>
+            </section>
+         </main>
+         <p></p>
+         <footer id="contactUs">
+         <p></p>
+         <form action="successPages/suscribeSuccess.html">
+            <label for="email">Join our mailing list for exciting updates and info!
+            Subscribe now and be part of the thrill!</label>
+            <p></p>
+            <input type="email" id="email" name="email" placeholder="Your email here!"required><br><br>
+         </form>
+         <h5> Need help?  <a href="links/contact.html">Contact Us!</a>
+         </h5>
+      </div>
+   </body>
+</html>
